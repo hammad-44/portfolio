@@ -4,8 +4,7 @@
 
 
 	<section id="home-section" class="hero">	
-		<div class="home-slider  owl-carousel">
-			<div class="slider-item ">
+
 				<div class="overlay"></div>
 				<div class="container">
 					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
@@ -27,8 +26,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+
 	</section>
 
 	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
@@ -226,7 +224,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
+					<a href="" class="services-1">
 						<span class="icon">
 							<i class="flaticon-analysis"></i>
 						</span>
@@ -236,7 +234,7 @@
 					</a>
 				</div>
 				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
+					<a href="" class="services-1">
 						<span class="icon">
 							<i class="flaticon-flasks"></i>
 						</span>
@@ -246,7 +244,7 @@
 					</a>
 				</div>
 				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
+					<a href="" class="services-1">
 						<span class="icon">
 							<i class="flaticon-ideas"></i>
 						</span>
@@ -257,7 +255,7 @@
 				</div>
 
 				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
+					<a href="" class="services-1">
 						<span class="icon">
 							<i class="flaticon-analysis"></i>
 						</span>
@@ -267,7 +265,7 @@
 					</a>
 				</div>
 				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
+					<a href="" class="services-1">
 						<span class="icon">
 							<i class="flaticon-flasks"></i>
 						</span>
@@ -277,7 +275,7 @@
 					</a>
 				</div>
 				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="#" class="services-1">
+					<a href="" class="services-1">
 						<span class="icon">
 							<i class="flaticon-ideas"></i>
 						</span>
@@ -378,30 +376,30 @@
 				<div class="col-md-7 heading-section text-center ftco-animate">
 					<h1 class="big big-2">Blog</h1>
 					<h2 class="mb-4">Our Blog</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
+
 			</div>
 			<div class="row d-flex">
+			{% for post in allPosts %}
 			
+		
 				<div class="col-md-4 d-flex ftco-animate">
 					<div class="blog-entry justify-content-end">
-						<a href="/blog" class="block-20" style="background-image: url('../static/images/image_1.jpg');">
+						<a href="/blog/{{post.slug}}" class="block-20" style="background-image: url('{{post.dispic}}');">
 						</a>
 						<div class="text mt-3 float-right d-block">
 							<div class="d-flex align-items-center mb-3 meta">
 								<p class="mb-0">
-									<span class="mr-2">June 21, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+									<span class="mr-2">{{post.timeStamp}}</span>
+									<a href="/blog/{{post.slug}}" class="mr-2">{{post.author}}</a>
 								</p>
 							</div>
-							<h3 class="heading"><a href="/blog">Why Lead Generation is Key for Business Growth</a>
+							<h3 class="heading"><a href="/blog/{{post.slug}}">{{post.title}}</a>
 							</h3>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
+							<p>{{post.content|safe| truncatechars:200}}</p>
 						</div>
 					</div>
 				</div>
+			{% endfor %}
 			</div>
 		</div>
 	</section>
