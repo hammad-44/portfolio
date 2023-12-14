@@ -55,6 +55,24 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'port.urls'
 
+
+TINYMCE_JS_URL = 'https://cdn.tiny.cloud/1/x56tm1u3x6o7mwm0220tppv164wyz520jwkqtlnnmka6xkeb/tinymce/5/tinymce.min.js'
+
+TINYMCE_DEFAULT_CONFIG = {
+    'plugins': [
+        'advlist autolink link image lists charmap print preview hr anchor pagebreak',
+        'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
+        'table emoticons template paste help'
+    ],
+    'toolbar': 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | ' +
+               'bullist numlist outdent indent | link image | print preview media | ' +
+               'forecolor backcolor emoticons | code',
+    'menubar': True,
+    'width': 800,
+    'height': 400,
+}
+
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -70,6 +88,8 @@ TEMPLATES = [
         },
     },
 ]
+
+
 
 WSGI_APPLICATION = 'port.wsgi.application'
 

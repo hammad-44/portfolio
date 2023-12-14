@@ -1,539 +1,659 @@
 {% extends "base.html" %}
 {% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/cards.css' %}">
+{% endblock %}
 {% block body %}
+<section id="hero" class="s-hero target-section">
+
+    <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+    <div class="row s-hero__content">
+        <div class="column">
+
+            <div class="s-hero__content-about">
+
+                <h1>I'm Hammad Haider.</h1>
+
+                <h3>
+                    I'm a full stack developer specializing in <span>Django</span> and other cutting-edge technologies,
+                    crafting dynamic and user-friendly web experiences. With expertise in front-end and back-end
+                    development, I create effective digital solutions for companies of all sizes globally. Let's
+                    collaborate and bring your digital ideas to life! <a class="smoothscroll" href="#about">start
+                        scrolling</a>
+                    and learn more <a class="smoothscroll" href="#about">about me</a>.
+                </h3>
+
+                <div class="s-hero__content-social">
+                    <a target="_blank" href="https://www.facebook.com/hammad.haider.96387/"><i
+                            class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://twitter.com/ERROR4O411"><i class="fab fa-twitter"
+                            aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/lowkey_hammad"><i class="fab fa-instagram"
+                            aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://dribbble.com/Hammad_haider_44"><i class="fab fa-dribbble"
+                            aria-hidden="true"></i></a>
+                    <a target="_blank"
+                        href="https://api.whatsapp.com/send?phone=923104416475&text=Your%20Messege%20%3A%20"><i
+                            class="fab fa-whatsapp" aria-hidden="true"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/hammad-haider-711a19246/"><i
+                            class="fab fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+
+            </div> <!-- end s-hero__content-about -->
+
+        </div>
+    </div> <!-- s-hero__content -->
+
+    <div class="s-hero__scroll">
+        <a href="#about" class="s-hero__scroll-link smoothscroll">
+            <span class="scroll-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                    <path
+                        d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z">
+                    </path>
+                </svg>
+            </span>
+            <span class="scroll-text">Scroll Down</span>
+        </a>
+    </div> <!-- s-hero__scroll -->
+
+</section> <!-- end s-hero -->
+
+<!-- about
+    ================================================== -->
+<section id="about" class="s-about target-section">
+
+    <div class="row">
+        <div class="column large-3 tab-12">
+            <img class="s-about__pic" src="{% static "images/hammad.jpg" %}" alt="">
+        </div>
+        <div class="column large-9 tab-12 s-about__content">
+            <h3>About Me</h3>
+            <p>
+                A passionate BS IT student with a keen interest in transforming ideas into innovative digital solutions.
+                My journey in the world of Information Technology has equipped me with a diverse skill set, ranging from
+                full stack web development to crafting engaging mobile and desktop applications. Proficient in languages
+                like HTML, CSS, JavaScript, and frameworks such as Django, I thrive on creating dynamic and user-centric
+                web experiences.<br> My expertise extends to mobile app development, where I leverage my knowledge of
+                technologies like React Native to build responsive and efficient applications. Additionally, I enjoy the
+                challenges of desktop app development, utilizing tools like Electron to create cross-platform solutions.
+                As I continue my academic journey, I am excited to apply my skills and collaborate on projects that push
+                the boundaries of technology and deliver impactful solutions
+            </p>
+
+            <hr>
+
+            <div class="row s-about__content-bottom">
+                <div class="column w-1000-stack">
+                    <h3>Contact Details</h3>
+
+                    <p>
+                        Hammad Haider <br>
+                        Lahore, Pakistan<br>
+                        <a href="tel:03104416475">+92 310 4416475</a> <br>
+                        <a href="mailto:haiderhammad282@gmail.com">haiderhammad282@gmail.com</a>
+                    </p>
+
+                </div>
+                <div class="column w-1000-stack">
+                    <a target='_blank' href="{% static " Hammad Haider CV.pdf" %}" class="btn btn--download">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:">
+                            <path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path>
+                            <path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path>
+                        </svg>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end row -->
+
+</section> <!-- end s-about -->
 
 
-	<section id="home-section" class="hero" style="">	
-		<div class="overlay"></div>
-				<div class="container">
-					<div class="row d-md-flex no-gutters slider-text .align-items-end12 justify-content-end12" style="justify-content: flex-start;margin-top:20% " data-scrollax-parent="true">
-						<div class="one-third js-fullheight order-md-last img"
-							style="background-image:url('https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?size=338&ext=jpg&ga=GA1.1.1413502914.1696982400&semt=ais');">
-                          
-							<div class="overlay"></div>
-						</div>
-						<div class="one-forth align-items-center ftco-animate"
-							data-scrollax=" properties: { translateY: '70%' }">
-							<div class="text">
-								<span class="subheading">Hello!</span>
-								<h1 class="mb-4 mt-3">I'm <span>Hammad Haider</span></h1>
-								<h2 class="mb-4">Full Stack Web Developer</h2>
-									<p><a href="/#contact-section" class="btn btn-primary py-3 px-4">Contact me</a> <a href="/#services-section"
-										class="btn btn-white btn-outline-white py-3 px-4">My Services</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
+<!-- resume
+    ================================================== -->
+<section id="resume" class="s-resume target-section">
 
-	</section>
+    <div class="row s-resume__section">
+        <div class="column large-3 tab-12">
+            <h3 class="section-header-allcaps">Career</h3>
+        </div>
+        <div class="column large-9 tab-12">
+            <div class="resume-block">
 
-	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-		<div class="container">
-			<div class="row d-flex">
-				<div class="col-md-6 col-lg-5 d-flex">
-					<div class="img-about img d-flex align-items-stretch">
-						<div class="overlay"></div>
-						<div class="img d-flex align-self-stretch align-items-center"
-							style="background-image:url('https://t3.ftcdn.net/jpg/02/82/22/92/360_F_282229262_Pk2OizR0uLhurmH630UVwEO2pEzqjUSz.jpg');">
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-					<div class="row justify-content-start pb-3">
-						<div class="col-md-12 heading-section ftco-animate">
-							<h1 class="big">About</h1>
-							<h2 class="mb-4">About Me</h2>
-						
-							<ul class="about-info mt-4 px-md-0 px-2">
-								<li class="d-flex"><span>Name:</span> <span>Hammad Haider</span></li>
-								<li class="d-flex"><span>Date of birth:</span> <span>November 14, 2003</span></li>
-								<li class="d-flex"><span>Address:</span> <span>Lahore, Pakistan</span></li>
-								<li class="d-flex"><span>Email:</span> <span>haiderhammad282@gmail.com</span></li>
-								<li class="d-flex"><span>Phone: </span> <span>+92-310-4416-475</span></li>
-							</ul>
-						</div>
-					</div>
-					<div class="counter-wrap ftco-animate d-flex mt-md-3">
-						<div class="text">
-							<p class="mb-4">
-								<span class="number" data-number="20">0</span>
-								<span>Project complete</span>
-							</p>
-							<p><a target="_blank" href="{%static 'cv.pdf' %}" class="btn btn-primary py-3 px-3">Download CV</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                <div class="resume-block__header">
+                    <h4 class="h3">Sheikh Toothpicks & Sugar</h4>
+                    <p class="resume-block__header-meta">
+                        <span>Web Developer</span>
+                        <span class="resume-block__header-date">
+                            July 2023
+                        </span>
+                    </p>
+                </div>
 
-	 <section class="ftco-section ftco-no-pb" id="resume-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-10 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Resume</h1>
-					<h2 class="mb-4">Resume</h2>
-			
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2017-2019</span>
-						<h2>Matric in Computer Science</h2>
-						<span class="position">CDG Boys</span>
-						<p class="mt-4"></p>
-					</div>
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2019-2021</span>
-						<h2>Inter in Computer Science</h2>
-						<span class="position">Superior Group Of Colleges</span>
-						<p class="mt-4"></p>
-					</div>
-					
-				</div>
+                <p>
+                <ul>
+                    <li>Founded and operated an e-commerce platform specializing in the sale of toothpicks and sugar
+                        sachets.</li>
+                    <li>Designed and developed the user-friendly website, optimizing the online shopping experience for
+                        customers.</li>
+                    <li>Implemented secure payment gateways and streamlined the checkout process to enhance transaction
+                        efficiency.</li>
+                    <li> Utilized digital marketing strategies to drive traffic, resulting in a 70% increase in online
+                        sales.</li>
+                    <li>
+                        Managed inventory, order fulfillment, and customer inquiries to ensure a seamless purchasing
+                        process.</li>
+                </ul>
+                </p>
 
-				<div class="col-md-6">
-				<div class="resume-wrap ftco-animate">
-						<span class="date">2021-2025</span>
-						<h2>Bacholers in Information Technology</h2>
-						<span class="position">Lahore institute of Science & Technology</span>
-						<p class="mt-4"></p>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center mt-5">
-				<div class="col-md-6 text-center ftco-animate">
-					<p><a target="_blank" href="{%static 'cv.pdf' %}" class="btn btn-primary py-4 px-5">Download CV</a></p>
-				</div>
-			</div>
-		</div>
-	</section> 
-	<section class="ftco-section" id="skills-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Skills</h1>
-					<h2 class="mb-4">My Skills</h2>
-					<p>Skill is the result of hard work, dedication, and a passion for what you do.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Python Django</h3>
-						<div class="progress">
-							<div class="progress-bar color-1" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:90%">
-								<span>90%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>HTML5 / CSS3</h3>
-						<div class="progress">
-							<div class="progress-bar color-2" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-								aria-valuemax="100" style="width:85%">
-								<span>85%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>JavaScript</h3>
-						<div class="progress">
-							<div class="progress-bar color-3" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-								aria-valuemax="100" style="width:95%">
-								<span>80%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Bootstrap</h3>
-						<div class="progress">
-							<div class="progress-bar color-4" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-								aria-valuemax="100" style="width:90%">
-								<span>90%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>WordPress</h3>
-						<div class="progress">
-							<div class="progress-bar color-5" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-								aria-valuemax="100" style="width:70%">
-								<span>70%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>React JS</h3>
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width:80%">
-								<span>80%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-                <div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>Git /GitHub</h3>
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width:80%">
-								<span>80%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-                <div class="col-md-6 animate-box">
-					<div class="progress-wrap ftco-animate">
-						<h3>DataBase</h3>
-						<div class="progress">
-							<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-								aria-valuemax="100" style="width:80%">
-								<span>80%</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+            </div>
+            <div class="resume-block">
 
-	<section class="ftco-section" id="services-section">
-		<div class="container">
-			<div class="row justify-content-center py-5 mt-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Services</h1>
-					<h2 class="mb-4">Services</h2>
-					<p></p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="" class="services-1">
-						<span class="icon">
-							<i class="flaticon-analysis"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Web Design</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="" class="services-1">
-						<span class="icon">
-							<i class="flaticon-flasks"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">UI / UX Design</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="" class="services-1">
-						<span class="icon">
-							<i class="flaticon-ideas"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Front End Development</h3>
-						</div>
-					</a>
-				</div>
+                <div class="resume-block__header">
+                    <h4 class="h3">7 Bugs </h4>
+                    <p class="resume-block__header-meta">
+                        <span>Web Developer</span>
+                        <span class="resume-block__header-date">
+                            Sept 2022
+                        </span>
+                    </p>
+                </div>
 
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="" class="services-1">
-						<span class="icon">
-							<i class="flaticon-analysis"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Full Stack Web Developing</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="" class="services-1">
-						<span class="icon">
-							<i class="flaticon-flasks"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">Wordpress</h3>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4 text-center d-flex ftco-animate">
-					<a href="" class="services-1">
-						<span class="icon">
-							<i class="flaticon-ideas"></i>
-						</span>
-						<div class="desc">
-							<h3 class="mb-5">React Development</h3>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+                <p>
+                <ul>
+                    <li>Founded and operated an e-commerce platform specializing in the sale of toothpicks and sugar
+                        sachets.</li>
+                    <li>Designed and developed the user-friendly website, optimizing the online shopping experience for
+                        customers.</li>
+                    <li>Implemented secure payment gateways and streamlined the checkout process to enhance transaction
+                        efficiency.</li>
+                    <li> Utilized digital marketing strategies to drive traffic, resulting in a 70% increase in online
+                        sales.</li>
+                    <li>
+                        Managed inventory, order fulfillment, and customer inquiries to ensure a seamless purchasing
+                        process.</li>
+                </ul>
+                </p>
+
+            </div> <!-- end resume-block -->
+
+            <div class="resume-block">
+
+                <div class="resume-block__header">
+                    <h4 class="h3">IS Garments</h4>
+                    <p class="resume-block__header-meta">
+                        <span>Web Developer</span>
+                        <span class="resume-block__header-date">
+                            July 2022
+                        </span>
+                    </p>
+                </div>
+
+                <p>
+                <ul>
+                    <li>Launched and managed an online garment boutique, offering a curated collection of
+                        fashion-forward apparel.</li>
+                    <li>Developed a visually appealing and responsive website, creating an immersive online shopping
+                        environment.</li>
+                    <li>Implemented secure payment gateways and streamlined the checkout process to enhance transaction
+                        efficiency.</li>
+                    <li> Managed customer relationships, addressing inquiries, handling returns, and ensuring a positive
+                        shopping experience.</li>
+                    <li>
+                        Analyzed sales data and customer feedback to make informed decisions and continuously improve
+                        the online boutique's offerings.</li>
+                </ul>
+                </p>
+
+            </div> <!-- end resume-block -->
+        </div>
+    </div> <!-- s-resume__section -->
 
 
-	
+    <div class="row s-resume__section">
+        <div class="column large-3 tab-12">
+            <h3 class="section-header-allcaps">Education</h3>
+        </div>
+        <div class="column large-9 tab-12">
+            <div class="resume-block">
 
-	{% comment %} <section class="ftco-section ftco-project" id="projects-section">
-		<div class="container">
-			<div class="row justify-content-center pb-5">
-				<div class="col-md-12 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Projects</h1>
-					<h2 class="mb-4">Our Projects</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(../static/images/project-4.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-8">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(../static/images/project-5.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
+                <div class="resume-block__header">
+                    <h4 class="h3">Lahore Institute of Science & Technology</h4>
+                    <p class="resume-block__header-meta">
+                        <span>BS in Information Technology</span>
+                        <span class="resume-block__header-date">
+                            Dec 2021 - 2025
+                        </span>
+                    </p>
+                </div>
 
-				<div class="col-md-8">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(../static/images/project-1.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
+                <p>
+                    As I embark on my professional journey, I carry with me the knowledge, skills, and passion instilled
+                    by my BSIT program, positioning me as a versatile and adaptable individual ready to contribute to
+                    the ever-evolving field of Information Technology.
+                </p>
 
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(../static/images/project-6.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-								style="background-image: url(../static/images/project-2.jpg);">
-								<div class="overlay"></div>
-								<div class="text text-center p-4">
-									<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-									<span>Web Design</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-12">
-							<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-								style="background-image: url(../static/images/project-3.jpg);">
-								<div class="overlay"></div>
-								<div class="text text-center p-4">
-									<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-									<span>Web Design</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> {% endcomment %}
+            </div> <!-- end resume-block -->
+
+            <div class="resume-block">
+
+                <div class="resume-block__header">
+                    <h4 class="h3">Superior Group of Colleges</h4>
+                    <p class="resume-block__header-meta">
+                        <span>Inter in Computer Sciences</span>
+                        <span class="resume-block__header-date">
+                            Sept 2019 - Aug 2021
+                        </span>
+                    </p>
+                </div>
+
+                <p>
+                    Throughout my intermediate studies, I have undertaken coursework that deepened my understanding of
+                    key areas such as algorithms, data structures, and software engineering principles. I've had the
+                    opportunity to work on projects that required a synthesis of theoretical knowledge and hands-on
+                    application, contributing to my growth as a budding computer scientist.
+                </p>
+
+            </div>
+            <div class="resume-block">
+
+                <div class="resume-block__header">
+                    <h4 class="h3">CDG Boys School</h4>
+                    <p class="resume-block__header-meta">
+                        <span>Matric in Computer Sciences</span>
+                        <span class="resume-block__header-date">
+                            Mar 2017 - Jul 2029
+                        </span>
+                    </p>
+                </div>
+
+                <p>
+                    Through rigorous coursework, I gained proficiency in core programming languages such as GW Basic,
+                    acquired a solid understanding of algorithms and data structures, and began to unravel the
+                    intricacies of software development. The matriculation phase served as a springboard, sparking my
+                    curiosity and setting the stage for more advanced studies.
+                </p>
+
+            </div> <!-- end resume-block -->
+        </div>
+    </div> <!-- s-resume__section -->
 
 
-	<section class="ftco-section" id="blog-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-5">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Blog</h1>
-					<h2 class="mb-4">Our Blog</h2>
+    <div class="row s-resume__section">
+        <div class="column large-3 tab-12">
+            <h3 class="section-header-allcaps">Skills</h3>
+        </div>
+        <div class="column large-9 tab-12">
+            <div class="resume-block">
 
-			</div>
-			<div class="row d-flex">
-			{% for post in allPosts %}
-			
-		
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="/blog/{{post.slug}}" class="block-20" style="background-image: url('{{post.dispic}}');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">{{post.timeStamp}}</span>
-									<a href="/blog/{{post.slug}}" class="mr-2">{{post.author}}</a>
-								</p>
-							</div>
-							<h3 class="heading"><a href="/blog/{{post.slug}}">{{post.title}}</a>
-							</h3>
-							<p>{{post.content|safe| truncatechars:200}}</p>
-						</div>
-					</div>
-				</div>
-			{% endfor %}
-			</div>
-		</div>
-	</section>
+                <p>
+                    I possess a versatile skill set that encompasses various domains within the realm of Computer
+                    Science. Proficient in programming languages such as [mention languages, e.g., Java, Python,
+                    JavaScript], I have demonstrated the ability to design and implement robust software solutions. My
+                    expertise extends to full-stack web development, mobile app development, and desktop application
+                    design, allowing me to create seamless and user-friendly digital experiences.
+                </p>
 
-	{% comment %} <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-		<div class="container">
-			<div class="row d-md-flex align-items-center">
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="100">0</strong>
-							<span>Awards</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="1200">0</strong>
-							<span>Complete Projects</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="1200">0</strong>
-							<span>Happy Customers</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-					<div class="block-18">
-						<div class="text">
-							<strong class="number" data-number="500">0</strong>
-							<span>Cups of coffee</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> {% endcomment %}
+                <ul class="skill-bars-fat">
+                    <li>
+                        <div class="progress percent95"></div>
+                        <strong>Python</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent75"></div>
+                        <strong>Java</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent85"></div>
+                        <strong>HTML</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent85"></div>
+                        <strong>CSS</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent85"></div>
+                        <strong>Javascript</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent85"></div>
+                        <strong>MySQL</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent75"></div>
+                        <strong>MongoDB</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent75"></div>
+                        <strong>Full Stack Web Development</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent65"></div>
+                        <strong>App Development</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent50"></div>
+                        <strong>Desktop Applications</strong>
+                    </li>
 
-	{% comment %} <section class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>I'm <span>Available</span> for freelancing</h2>
-					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-					<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">Hire me</a></p>
-				</div>
-			</div>
-		</div>
-	</section> {% endcomment %}
 
-	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-3">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Contact</h1>
-					<h2 class="mb-4">Contact Me</h2>
-					<p>Reach out and let's turn ideas into reality.</p>
-				</div>
-			</div>
+                </ul>
 
-			<div class="row d-flex contact-info mb-5">
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-map-signs"></span>
-						</div>
-						<h3 class="mb-4">Address</h3>
-						<p>Lahore, Pakistan</p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-phone2"></span>
-						</div>
-						<h3 class="mb-4">Contact Number</h3>
-						<p><a href="tel:03104416475">+92 310 4416 475</a></p>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-paper-plane"></span>
-						</div>
-						<h3 class="mb-4">Email Address</h3>
-						<p><a href="mailto:haiderhammad282@gmail.com">haiderhammad282@gmail.com</a></p>
-					</div>
-				</div>
-				 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-					<div class="align-self-stretch box p-4 text-center">
-						<div class="icon d-flex align-items-center justify-content-center">
-							<span class="icon-globe"></span>
-						</div>
-						<h3 class="mb-4">LinkedIN</h3>
-						<p><a href="https://www.linkedin.com/in/hammad-haider-711a19246/">Hammad</a></p>
-					</div>
-				</div> 
-			</div>
+            </div> <!-- end resume-block -->
 
-			<div class="row no-gutters block-9">
-				<div class="col-md-6 order-md-last d-flex">
-				{% csrf_token %}
-					<form action="/contact" method="post" class="bg-light p-4 p-md-5 contact-form">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Name" name="name">
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Email" name="email">
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Subject" name="subject">
-						</div>
-						<div class="form-group">
-							<textarea name="message" id="" cols="30" rows="7" class="form-control"
-								placeholder="Message" ></textarea>
-						</div>
-						<div class="form-group">
-						{% csrf_token %}
-							<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-						</div>
-					</form>
+        </div>
+    </div> <!-- s-resume__section -->
 
-				</div>
+</section> <!-- end s-resume -->
 
-				<div class="col-md-6 d-flex">
-					<div class="img" style="background-image: url('https://cdn2.vectorstock.com/i/1000x1000/06/46/graphic-cartoon-character-business-promotion-vector-34710646.jpg');"></div>
-				</div>
-			</div>
-		</div>
-	</section>
 
-      
-    
+<!-- portfolio
+    ================================================== -->
+<section id="portfolio" class="s-portfolio target-section">
+
+    <div class="row s-portfolio__header">
+        <div class="column large-12">
+            <h3>A Few Of My Latest Creations</h3>
+        </div>
+    </div>
+
+    <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+
+        <div class="column folio-item">
+            <a href="#modal-01" class="folio-item__thumb">
+                <img src="{%static 'images/portfolio/droplet.jpg'%}" srcset="{%static 'images/portfolio/droplet.jpg 1x,'%} 
+                                 {%static 'images/portfolio/droplet@2x.jpg 2x'%}" alt="">
+            </a>
+        </div> <!-- end folio-item -->
+
+        <div class="column folio-item">
+            <a href="#modal-02" class="folio-item__thumb">
+                <img src="{%static 'images/portfolio/lamp.jpg'%}" srcset="{%static 'images/portfolio/lamp.jpg 1x,'%} 
+                                 {%static 'images/portfolio/lamp@2x.jpg 2x'%}" alt="">
+            </a>
+        </div> <!-- end folio-item -->
+
+        <div class="column folio-item">
+            <a href="#modal-03" class="folio-item__thumb">
+                <img src="{%static 'images/portfolio/minimalismo.jpg'%}" srcset="{%static 'images/portfolio/minimalismo.jpg 1x,'%} 
+                                 {%static 'images/portfolio/minimalismo@2x.jpg 2x'%}" alt="">
+            </a>
+        </div> <!-- end folio-item -->
+
+        <div class="column folio-item">
+            <a href="#modal-04" class="folio-item__thumb">
+                <img src="{%static 'images/portfolio/shutterbug.jpg'%}" srcset="{%static 'images/portfolio/shutterbug.jpg 1x,'%} 
+                                 {%static 'images/portfolio/shutterbug@2x.jpg 2x'%}" alt="">
+            </a>
+        </div> <!-- end folio-item -->
+
+        <div class="column folio-item">
+            <a href="#modal-05" class="folio-item__thumb">
+                <img src="{%static 'images/portfolio/fuji.jpg'%}" srcset="{%static 'images/portfolio/fuji.jpg 1x,'%} 
+                                 {%static 'images/portfolio/fuji@2x.jpg 2x'%}" alt="">
+            </a>
+        </div> <!-- end folio-item -->
+
+        <div class="column folio-item">
+            <a href="#modal-06" class="folio-item__thumb">
+                <img src="{%static 'images/portfolio/skaterboy.jpg'%}" srcset="{%static 'images/portfolio/skaterboy.jpg 1x,'%} 
+                                 {%static 'images/portfolio/skaterboy@2x.jpg 2x'%}" alt="">
+            </a>
+        </div> <!-- end folio-item -->
+
+        <div class="column folio-item">
+            <a href="#modal-07" class="folio-item__thumb">
+                <img src="{%static 'images/portfolio/rucksack.jpg'%}" srcset="{%static 'images/portfolio/rucksack.jpg 1x,'%} 
+                                 {%static 'images/portfolio/rucksack@2x.jpg 2x'%}" alt="">
+            </a>
+        </div> <!-- end folio-item -->
+
+        <div class="column folio-item">
+            <a href="#modal-08" class="folio-item__thumb">
+                <img src="{%static 'images/portfolio/sanddunes.jpg'%}" srcset="{%static 'images/portfolio/sanddunes.jpg 1x,'%} 
+                                 {%static 'images/portfolio/sanddunes@2x.jpg 2x'%}" alt="">
+            </a>
+        </div> <!-- end folio-item -->
+
+    </div> <!-- end folio-list -->
+
+
+    <!-- Modal Templates Popup
+        =========================================================== -->
+    <div id="modal-01" hidden>
+        <div class="modal-popup">
+            <img src="images/portfolio/gallery/g-droplet.jpg" alt="" />
+
+            <div class="modal-popup__desc">
+                <h5>Droplet</h5>
+                <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda
+                    iure et expedita voluptatem. Ratione officiis quae.</p>
+                <ul class="modal-popup__cat">
+                    <li>Branding</li>
+                    <li>Product Design</li>
+                </ul>
+            </div>
+
+            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+        </div>
+    </div> <!-- end modal -->
+
+    <div id="modal-02" hidden>
+        <div class="modal-popup">
+            <img src="images/portfolio/gallery/g-lamp.jpg" alt="" />
+
+            <div class="modal-popup__desc">
+                <h5>The Lamp</h5>
+                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                <ul class="modal-popup__cat">
+                    <li>Branding</li>
+                </ul>
+            </div>
+
+            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+        </div>
+    </div> <!-- end modal -->
+
+    <div id="modal-03" hidden>
+        <div class="modal-popup">
+            <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="" />
+
+            <div class="modal-popup__desc">
+                <h5>Minimalismo</h5>
+                <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti
+                    illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
+                <ul class="modal-popup__cat">
+                    <li>Product Design</li>
+                </ul>
+            </div>
+
+            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+        </div>
+    </div> <!-- end modal -->
+
+    <div id="modal-04" hidden>
+        <div class="modal-popup">
+            <img src="images/portfolio/gallery/g-shutterbug.jpg" alt="" />
+
+            <div class="modal-popup__desc">
+                <h5>Shutterbug</h5>
+                <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas
+                    voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
+                <ul class="modal-popup__cat">
+                    <li>E-Commerce</li>
+                </ul>
+            </div>
+
+            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+        </div>
+    </div> <!-- end modal -->
+
+    <div id="modal-05" hidden>
+        <div class="modal-popup">
+
+            <img src="images/portfolio/gallery/g-fuji.jpg" alt="" />
+
+            <div class="modal-popup__desc">
+                <h5>Fuji</h5>
+                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                <ul class="modal-popup__cat">
+                    <li>Product Design</li>
+                </ul>
+            </div>
+
+            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+        </div>
+    </div> <!-- end modal -->
+
+    <div id="modal-06" hidden>
+        <div class="modal-popup">
+            <img src="images/portfolio/gallery/g-skaterboy.jpg" alt="" />
+
+            <div class="modal-popup__desc">
+                <h5>Skaterboy</h5>
+                <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate
+                    voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                <ul class="modal-popup__cat">
+                    <li>Branding</li>
+                    <li>Product Design</li>
+                </ul>
+            </div>
+
+            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+        </div>
+    </div> <!-- end modal -->
+
+    <div id="modal-07" hidden>
+        <div class="modal-popup">
+            <img src="images/portfolio/gallery/g-rucksack.jpg" alt="" />
+
+            <div class="modal-popup__desc">
+                <h5>Rucksack</h5>
+                <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda
+                    iure et expedita voluptatem. Ratione officiis quae.</p>
+                <ul class="modal-popup__cat">
+                    <li>Branding</li>
+                    <li>Product Design</li>
+                </ul>
+            </div>
+
+            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+        </div>
+    </div> <!-- end modal -->
+
+    <div id="modal-08" hidden>
+        <div class="modal-popup">
+            <img src="images/portfolio/gallery/g-sanddunes.jpg" alt="" />
+
+            <div class="modal-popup__desc">
+                <h5>Sand Dunes</h5>
+                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                    elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                <ul class="modal-popup__cat">
+                    <li>Web Design</li>
+                </ul>
+            </div>
+
+            <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+        </div>
+    </div> <!-- end modal -->
+
+
+</section> <!-- end s-portfolio -->
+
+<section id="blogs" class"blogs-section">
+    {% for blog in allPosts %}
+    {% comment %} <section class="dark">
+        <div class="container py-4">
+            <article class="postcard dark">
+                <a class="postcard__img_link" href="#">
+                    <img class="postcard__img" src="{{ blog.dispic }}" alt="{{ blog.title }}" height="300px" />
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title blue"><a href="#">{{ blog.title }}</a></h1>
+                    <div class="postcard__subtitle small">
+                        <time datetime="{{ blog.timeStamp|date:'Y-m-d H:i:s' }}">
+                            <i class="fas fa-calendar-alt mr-2"></i>{{ blog.timeStamp|date:'D, M jS Y' }}
+                        </time>
+                    </div>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">{{ blog.content|truncatewords_html:30|safe }}</div>
+                    <ul class="postcard__tagbox">
+                        <li class="tag__item"><i class="fas fa-tag mr-2"></i>{{ blog.views }}</li>
+                        <li class="tag__item play blue">
+                            <a href="#"><i class="fas fa-play mr-2"></i>Other By Hammad</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+
+    </section> {% endcomment %}
+    {% endfor %}
+
+</section>
+
+
+<!-- contact
+    ================================================== -->
+<section id="contact" class="s-contact target-section">
+
+    <div class="row s-contact__header">
+        <div class="column large-12">
+            <h3 class="section-header-allcaps">Say Hello</h3>
+        </div>
+    </div>
+
+    <div class="row s-contact__content">
+
+        <div class="column large-7 medium-12">
+
+            <h4 class="huge-text">
+                Have a new project in mind? Let's collaborate and build something awesome.
+                Let's turn that idea to an even greater product :)
+            </h4>
+
+        </div>
+
+        <div class="column large-4 medium-12">
+
+            <div class="row contact-infos">
+                <div class="column large-12 medium-6 tab-12">
+                    <div class="contact-block">
+                        <h5 class="contact-block__header">
+                            Email
+                        </h5>
+                        <p class="contact-block__content">
+                            <a class="mailtoui" href="mailto:haiderhammad282@gmail.com">haiderhammad282@gmail.com</a>
+                        </p>
+                    </div> <!-- end contact-block -->
+                </div>
+                <div class="column large-12 medium-6 tab-12">
+                    <div class="contact-block">
+                        <h5 class="contact-block__header">
+                            Phone
+                        </h5>
+                        <p class="contact-block__content">
+                            <a href="tel:03104416475">+92 310 4416475</a>
+                        </p>
+                    </div> <!-- end contact-block -->
+                </div>
+
+                <div class="column large-12">
+                    <a href="mailto:haiderhammad282@gmail.com" class="mailtoui btn btn--primary h-full-width">Let's
+                        Talk</a>
+                </div>
+            </div> <!-- end contact-infos -->
+
+        </div>
+    </div> <!-- s-contact__content -->
+
+</section> <!-- end s-contact -->
 {% endblock body %}
