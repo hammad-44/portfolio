@@ -1,12 +1,9 @@
 from django.shortcuts import render,redirect
 from base.models import Contact
 # Create your views here.
-from blog.models import Post, BlogComment
 
 def index(request):
-    allPosts= Post.objects.all()
-    context={'allPosts': allPosts}
-    return render(request, "home.html",context)
+    return render(request, "home.html")
 
 def contact(request):
     if request.method == "POST":

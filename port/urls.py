@@ -24,5 +24,4 @@ admin.site.index_title="Welcome to CodeWizards Admin Panel"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('base.urls')),
-    path('blog/', include('blog.urls')),
 ]
